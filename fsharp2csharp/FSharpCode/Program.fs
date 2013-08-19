@@ -18,9 +18,8 @@ let playMaybeMonad () =
 
   let failResult = do' {
     let! red = mRed
-    let! green = mGreen
     let! none = none
-    return plusColor red green
+    return plusColor red none
   }
 
   printfn "%A" failResult
