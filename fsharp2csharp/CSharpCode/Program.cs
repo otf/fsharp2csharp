@@ -12,7 +12,7 @@ namespace CSharpCode
         public static void PlayFunction()
         {
             // id : a -> a
-            Console.WriteLine(Func.Id("john")); // john
+            Console.WriteLine(Func.Id("john")); // "john"
 
             // string * int -> string
             Func<string, int, string> join = (x, i) => String.Join(" ", Seq.Repeat(i, x));

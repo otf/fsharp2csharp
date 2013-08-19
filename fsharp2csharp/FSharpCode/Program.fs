@@ -1,6 +1,25 @@
 ﻿open Prelude // by https://code.google.com/p/fsharp-typeclasses
 open Control.Applicative
 
+let playFunction () =
+  // id : a -> a
+  printfn "%A" <| id "john" // "john"
+
+  // string * int -> string
+  let join = fun (x, i) -> System.String.Join(" ", (Seq.init i (const' x)))
+  printfn "%A" <| join ("john", 3) // "john john john"
+
+  // string -> int -> string
+  let curriedJoin = FuncConvert.FuncFromTupled(join)
+  printfn "%A" <| curriedJoin "john" 3 // "john john john"
+
+  // string * int -> string
+  let uncurriedJoin = (<||) curriedJoin
+  printfn "%A" <| uncurriedJoin ("john", 3) // "john john john"
+
+  let flipedJoin = flip curriedJoin
+  printfn "%A" <| flipedJoin 3 "john"  // "john john john"
+  
 let playMaybeMonad () =
   let none = None
   let mRed = Some "red"
@@ -77,6 +96,7 @@ let playSeqMonad () =
 
 [<EntryPoint>]
 let main argv = 
+  playFunction ()
   playMaybeMonad () 
   playMaybeMonad_with_applicative_style ()
   playSeq ()
