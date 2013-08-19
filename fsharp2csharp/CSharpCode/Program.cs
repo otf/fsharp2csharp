@@ -23,6 +23,7 @@ namespace CSharpCode
             Func<string, Func<int, string>> curriedJoin = Func.Curry(join);
             Console.WriteLine(curriedJoin("john")(3)); // "john john john"
 
+            // string * int -> string
             Func<string, int, string> uncurriedJoin = Func.Uncurry(curriedJoin);
             Console.WriteLine(uncurriedJoin("john", 3)); // "john john john"
 
