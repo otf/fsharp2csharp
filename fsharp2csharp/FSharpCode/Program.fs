@@ -19,7 +19,18 @@ let playFunction () =
 
   let flipedJoin = flip curriedJoin
   printfn "%A" <| flipedJoin 3 "john"  // "john john john"
-  
+
+let playMaybeBindAndReturn () =
+  let mRed = Some "red"
+  let addBrane = fun c -> "[" + c + "]"
+
+  // bind(>>=) : M a -> (a -> M b) -> M b
+  // return : a -> M a
+  //
+  // when M is Maybe, return means Some function.
+  let result = mRed >>= (addBrane >> return')
+  printfn "%A" result
+
 let playMaybeMonad () =
   let none = None
   let mRed = Some "red"
@@ -76,6 +87,18 @@ let playSeq () =
 
   printfn "%A" result
 
+let playSeqBindAndReturn () =
+  let mColors = ["red"; "green"; "blue"]
+  let addBrane = fun c -> "[" + c + "]"
+
+  // bind(>>=) : M a -> (a -> M b) -> M b
+  // return : a -> M a
+  //
+  // when M is Maybe, return means Some function.
+  let result = mColors >>= (addBrane >> return')
+  printfn "%A" result
+
+
 let playSeqMonad () =
   // init the seq. 1..5
   // same `seq [1..5]`
@@ -111,8 +134,10 @@ let playSeqMonad_with_applicative_style () =
 [<EntryPoint>]
 let main argv = 
   playFunction ()
+  playMaybeBindAndReturn ()
   playMaybeMonad () 
   playMaybeMonad_with_applicative_style ()
   playSeq ()
+  playSeqBindAndReturn ()
   playSeqMonad ()
   0
