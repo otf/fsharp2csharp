@@ -9,6 +9,28 @@ namespace CSharpCode
 {
     class Program
     {
+        public static void PlayFunction()
+        {
+            // id : a -> a
+            Console.WriteLine(Func.Id("john")); // john
+
+            // string * int -> string
+            Func<string, int, string> join = (x, i) => String.Join(" ", Seq.Repeat(i, x));
+
+            Console.WriteLine(join("john", 3)); // "john john john"
+
+            // string -> int -> string
+            Func<string, Func<int, string>> curriedJoin = Func.Curry(join);
+            Console.WriteLine(curriedJoin("john")(3)); // "john john john"
+
+            Func<string, int, string> uncurriedJoin = Func.Uncurry(curriedJoin);
+            Console.WriteLine(uncurriedJoin("john", 3)); // "john john john"
+
+            // int -> string -> string
+            Func<int, Func<string, string>> flipedJoin = Func.Flip(curriedJoin);
+            Console.WriteLine(flipedJoin(3)("john")); // "john john john"
+        }
+
         public static void PlayMaybeMonad()
         {
             var mNone = Option.None;
@@ -73,6 +95,7 @@ namespace CSharpCode
 
         static void Main(string[] args)
         {
+            PlayFunction();
             PlayMaybeMonad();
             PlaySeq();
             PlaySeqMonad();
