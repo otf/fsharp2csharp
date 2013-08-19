@@ -51,11 +51,31 @@ namespace CSharpCode
             Console.WriteLine(result.ToStr());
         }
 
+        public static void PlaySeqMonad()
+        {
+            // init the seq. 1..5
+            var mNums1 = Seq.Init(5, i => i + 1);
+            // init the seq. 6..10
+            var mNums2 = Seq.Init(5, i => i + 6);
+
+            Func<int, int, int> multipleNumber = (c1, c2) => c1 * c2;
+
+            // can't do that:
+            // multipleNumber(seqNums1, seqNums2);
+            var result =
+                    from num1 in mNums1
+                    from num2 in mNums2
+                    select multipleNumber(num1, num2);
+
+            Console.WriteLine(result);
+        }
+
 
         static void Main(string[] args)
         {
             PlayMaybeMonad();
             PlaySeq();
+            PlaySeqMonad();
         }
     }
 }
