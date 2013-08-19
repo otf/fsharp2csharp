@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
-<assembly><name>FsControl.Core</name></assembly>
+<assembly><name>fsharp_typeclasses</name></assembly>
 <members>
 <member name="">
 
@@ -26,7 +26,130 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Alternative">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Control.Applicative">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -86,7 +209,55 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Applicative">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -108,6 +279,12 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Control.Arrow">
 
 </member>
 <member name="">
@@ -116,7 +293,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Arrow">
+<member name="">
 
 </member>
 <member name="">
@@ -131,7 +308,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.ArrowApply">
+<member name="">
 
 </member>
 <member name="">
@@ -188,7 +365,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.ArrowChoice">
+<member name="">
 
 </member>
 <member name="">
@@ -200,6 +377,9 @@
 <member name="">
 
 </member>
+<member name="T:Control.Monad.Base">
+
+</member>
 <member name="">
 
 </member>
@@ -221,7 +401,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Category">
+<member name="T:Control.Monad.Cont">
 
 </member>
 <member name="">
@@ -267,6 +447,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.ContT">
 
 </member>
 <member name="">
@@ -284,7 +467,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Foldable">
+<member name="">
 
 </member>
 <member name="">
@@ -297,6 +480,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.Reader">
 
 </member>
 <member name="">
@@ -335,7 +521,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Functor">
+<member name="">
 
 </member>
 <member name="">
@@ -357,6 +543,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.ReaderT">
 
 </member>
 <member name="">
@@ -393,6 +582,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.State">
 
 </member>
 <member name="">
@@ -431,10 +623,13 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Monad">
+<member name="">
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.StateT">
 
 </member>
 <member name="">
@@ -464,7 +659,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.MonadPlus">
+<member name="">
 
 </member>
 <member name="">
@@ -554,7 +749,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Monoid">
+<member name="">
 
 </member>
 <member name="">
@@ -569,7 +764,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Abstractions.Traversable">
+<member name="">
 
 </member>
 <member name="">
@@ -587,7 +782,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Floating">
+<member name="">
 
 </member>
 <member name="">
@@ -611,7 +806,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Fractional">
+<member name="">
 
 </member>
 <member name="">
@@ -636,6 +831,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.Trans.ListT">
 
 </member>
 <member name="">
@@ -653,7 +851,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Integral">
+<member name="">
 
 </member>
 <member name="">
@@ -663,6 +861,12 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.Trans.MaybeT">
+
+</member>
+<member name="T:Control.Monad.Trans">
 
 </member>
 <member name="">
@@ -698,6 +902,9 @@
 <member name="">
 
 </member>
+<member name="T:Control.Monad.Writer">
+
+</member>
 <member name="">
 
 </member>
@@ -756,6 +963,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Control.Monad.WriterT">
 
 </member>
 <member name="">
@@ -803,7 +1013,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Num">
+<member name="">
 
 </member>
 <member name="">
@@ -825,6 +1035,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Data.Foldable">
 
 </member>
 <member name="">
@@ -845,7 +1058,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Numerics">
+<member name="">
 
 </member>
 <member name="">
@@ -863,7 +1076,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.Real">
+<member name="">
 
 </member>
 <member name="">
@@ -884,7 +1097,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Abstractions.RealFrac">
+<member name="">
 
 </member>
 <member name="">
@@ -935,7 +1148,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.NumericH98.Types.Ratio">
+<member name="">
 
 </member>
 <member name="">
@@ -968,7 +1181,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Prelude">
+<member name="">
 
 </member>
 <member name="">
@@ -984,6 +1197,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Data.Monoid">
 
 </member>
 <member name="">
@@ -1002,6 +1218,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Data.Traversable">
 
 </member>
 <member name="">
@@ -1157,7 +1376,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Cont">
+<member name="">
 
 </member>
 <member name="">
@@ -1205,28 +1424,28 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.ContT.ContT">
+<member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.ContT">
+<member name="">
 
 </member>
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Dual">
+<member name="">
 
 </member>
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Endo">
+<member name="">
 
 </member>
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Kleisli">
+<member name="">
 
 </member>
 <member name="">
@@ -1235,7 +1454,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.ListT">
+<member name="">
 
 </member>
 <member name="">
@@ -1256,7 +1475,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadAsync">
+<member name="">
 
 </member>
 <member name="">
@@ -1277,7 +1496,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadCont">
+<member name="">
 
 </member>
 <member name="">
@@ -1316,7 +1535,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadReader">
+<member name="">
 
 </member>
 <member name="">
@@ -1355,7 +1574,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadState">
+<member name="">
 
 </member>
 <member name="">
@@ -1373,7 +1592,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadTrans">
+<member name="">
 
 </member>
 <member name="">
@@ -1421,7 +1640,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.MonadWriter">
+<member name="">
 
 </member>
 <member name="">
@@ -1430,7 +1649,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.OptionT">
+<member name="">
 
 </member>
 <member name="">
@@ -1448,7 +1667,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Reader">
+<member name="">
 
 </member>
 <member name="">
@@ -1511,10 +1730,10 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.ReaderT.ReaderT">
+<member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.ReaderT">
+<member name="">
 
 </member>
 <member name="">
@@ -1538,7 +1757,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.State">
+<member name="">
 
 </member>
 <member name="">
@@ -1559,7 +1778,7 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.Writer">
+<member name="">
 
 </member>
 <member name="">
@@ -1625,10 +1844,10 @@
 <member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.WriterT.WriterT">
+<member name="">
 
 </member>
-<member name="T:FsControl.Core.Types.WriterT">
+<member name="">
 
 </member>
 <member name="">
@@ -1656,6 +1875,9 @@
 
 </member>
 <member name="">
+
+</member>
+<member name="T:Prelude.Ratio">
 
 </member>
 <member name="">
@@ -1673,10 +1895,10 @@
 <member name="">
 
 </member>
-<member name="T:InlineHelper.Overloads">
+<member name="T:Prelude.NumericLiteralG">
 
 </member>
-<member name="T:InlineHelper">
+<member name="T:Prelude">
 
 </member>
 </members>

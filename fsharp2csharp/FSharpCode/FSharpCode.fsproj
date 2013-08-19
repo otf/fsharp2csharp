@@ -36,8 +36,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FsControl.Core">
-      <HintPath>lib\FsControl.Core.dll</HintPath>
+    <Reference Include="fsharp_typeclasses">
+      <HintPath>lib\fsharp_typeclasses.dll</HintPath>
+    </Reference>
+    <Reference Include="InlineHelper">
+      <HintPath>lib\InlineHelper.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -1,5 +1,5 @@
-﻿// F# の詳細については、http://fsharp.net を参照してください
-// 詳細については、'F# チュートリアル' プロジェクトを参照してください。
+﻿open Prelude
+
 
 [<EntryPoint>]
 let main argv = 
