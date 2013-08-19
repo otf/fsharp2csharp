@@ -1,6 +1,6 @@
 fsharp2csharp
 =============
-Comparison between F#(with Typeclasses) and C#(with LangExt)
+This sample code explains the comparison between F#(with Typeclasses) and C#(with LangExt)
 
 * Play Function
 * Play Maybe Monad
