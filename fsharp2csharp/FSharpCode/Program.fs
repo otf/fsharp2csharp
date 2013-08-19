@@ -94,6 +94,20 @@ let playSeqMonad () =
 
   printfn "%A" result
 
+let playSeqMonad_with_applicative_style () =
+  // init the seq. 1..5
+  // same `seq [1..5]`
+  let mNums1 = Seq.init 5 ((+) 1) |> Seq.toList
+  // init the seq. 6..10
+  // same `seq [6..10]`
+  let mNums2 = Seq.init 5 ((+) 6) |> Seq.toList
+
+  let multipleNumbers = fun n1 n2 -> n1 * n2
+
+  let result = multipleNumbers <<|> mNums1 <*> mNums2
+
+  printfn "%A" result
+
 [<EntryPoint>]
 let main argv = 
   playFunction ()
