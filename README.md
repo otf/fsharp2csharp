@@ -6,6 +6,7 @@ This sample code explains the comparison between F#(with [Typeclasses](https://c
 * Play Maybe Monad
 * Play Seq
 * Play Seq Monad
+* Applicative Style (only F#)
 
 ## FSharp
 See the [Program.fs](https://github.com/otf/fsharp2csharp/blob/master/fsharp2csharp/FSharpCode/Program.fs "Program.fs")
