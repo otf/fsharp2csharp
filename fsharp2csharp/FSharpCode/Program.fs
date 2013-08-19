@@ -57,9 +57,28 @@ let playSeq () =
 
   printfn "%A" result
 
+let playSeqMonad () =
+  // init the seq. 1..5
+  // same `seq [1..5]`
+  let mNums1 = Seq.init 5 ((+) 1)
+  // init the seq. 6..10
+  // same `seq [6..10]`
+  let mNums2 = Seq.init 5 ((+) 6)
+
+  let multipleNumbers = fun n1 n2 -> n1 * n2
+
+  let result = seq {
+    for num1 in mNums1 do
+      for num2 in mNums2 do
+        yield multipleNumbers num1 num2
+  }
+
+  printfn "%A" result
+
 [<EntryPoint>]
 let main argv = 
   playMaybeMonad () 
   playMaybeMonad_with_applicative_style ()
   playSeq ()
+  playSeqMonad ()
   0

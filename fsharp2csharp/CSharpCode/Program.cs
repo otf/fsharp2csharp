@@ -58,7 +58,7 @@ namespace CSharpCode
             // init the seq. 6..10
             var mNums2 = Seq.Init(5, i => i + 6);
 
-            Func<int, int, int> multipleNumber = (c1, c2) => c1 * c2;
+            Func<int, int, int> multipleNumber = (n1, n2) => n1 * n2;
 
             // can't do that:
             // multipleNumber(seqNums1, seqNums2);
