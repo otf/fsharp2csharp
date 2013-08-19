@@ -32,6 +32,20 @@ namespace CSharpCode
             Console.WriteLine(flipedJoin(3)("john")); // "john john john"
         }
 
+        public static void PlayMaybeBindAndReturn()
+        {
+            var mRed = Option.Some("red");
+
+            Func<string, string> addBrane = c => "[" + c + "]";
+
+            // bind : M a -> (a -> M b) -> M b
+            // return : a -> M a
+            //
+            // when M is Maybe, return sames to Some function.
+            var result = mRed.Bind(red => Option.Some(addBrane(red)));
+            Console.WriteLine(result);
+        }
+
         public static void PlayMaybeMonad()
         {
             var mNone = Option.None;
@@ -97,6 +111,7 @@ namespace CSharpCode
         static void Main(string[] args)
         {
             PlayFunction();
+            PlayMaybeBindAndReturn();
             PlayMaybeMonad();
             PlaySeq();
             PlaySeqMonad();
