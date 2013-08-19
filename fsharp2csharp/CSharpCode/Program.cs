@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+// using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LangExt;
@@ -15,9 +15,9 @@ namespace CSharpCode
             var mRed = Option.Some("red");
             var mGreen = Option.Some("green");
 
-            Func<string, string, string> plusColor = (color1, color2) => color1 + " " + color2;
+            Func<string, string, string> plusColor = (c1, c2) => c1 + " " + c2;
 
-            // can't
+            // can't do that:
             // plusColor(mRed, mGreen);
             var successResult =
                     from red in mRed
@@ -34,10 +34,28 @@ namespace CSharpCode
             Console.WriteLine(failResult);
         }
 
+        public static void PlaySeq()
+        {
+            // init the seq. 0, 1, 2, 3 ... inifinite
+            var seq = Seq.InitInfinite(Func.Id);
+
+            var take10 = seq.Take(10);
+            var sum = take10.Fold(0, (s, i) => s + i);
+
+            Console.WriteLine("sum is " + sum);
+
+            var take10afterSkip10 = seq.Skip(10).Take(10);
+            var result =
+                take10.Zip(take10afterSkip10).Map(tup => tup.Match((left, right) => left + right));
+
+            Console.WriteLine(result.ToStr());
+        }
+
 
         static void Main(string[] args)
         {
             PlayMaybeMonad();
+            PlaySeq();
         }
     }
 }
