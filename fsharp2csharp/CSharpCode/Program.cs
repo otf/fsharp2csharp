@@ -37,14 +37,14 @@ namespace CSharpCode
         public static void PlaySeq()
         {
             // init the seq. 0, 1, 2, 3 ... inifinite
-            var seq = Seq.InitInfinite(Func.Id);
+            var seqNums = Seq.InitInfinite(Func.Id);
 
-            var take10 = seq.Take(10);
+            var take10 = seqNums.Take(10);
             var sum = take10.Fold(0, (s, i) => s + i);
 
             Console.WriteLine("sum is " + sum);
 
-            var take10afterSkip10 = seq.Skip(10).Take(10);
+            var take10afterSkip10 = seqNums.Skip(10).Take(10);
             var result =
                 take10.Zip(take10afterSkip10).Map(tup => tup.Match((left, right) => left + right));
 

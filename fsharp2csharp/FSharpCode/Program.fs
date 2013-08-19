@@ -43,8 +43,24 @@ let playMaybeMonad_with_applicative_style () =
 
   printfn "%A" failResult
 
+let playSeq () =
+  // init the seq. 0, 1, 2, 3 ... inifinite
+  let seqNums = Seq.initInfinite(id)
+
+  let take10 = seqNums |> Seq.take 10
+  let sum = take10 |> Seq.fold (fun s i -> s + i) 0
+
+  printfn "sum is %A" sum
+
+  let take10afterSkip10 = seqNums |> Seq.skip 10 |> Seq.take 10
+  let result =
+        take10 |> Seq.zip take10afterSkip10 |> Seq.map (function (left, right) -> left + right)
+
+  printfn "%A" result
+
 [<EntryPoint>]
 let main argv = 
   playMaybeMonad () 
   playMaybeMonad_with_applicative_style ()
+  playSeq ()
   0
