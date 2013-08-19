@@ -1,4 +1,4 @@
-﻿open Prelude
+﻿open Prelude // by https://code.google.com/p/fsharp-typeclasses
 open Control.Applicative
 
 let playMaybeMonad () =
@@ -19,7 +19,7 @@ let playMaybeMonad () =
   let failResult = do' {
     let! red = mRed
     let! none = none
-    return plusColor red none
+    return plusColor red green
   }
 
   printfn "%A" failResult
