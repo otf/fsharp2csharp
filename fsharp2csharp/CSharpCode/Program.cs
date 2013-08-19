@@ -41,7 +41,7 @@ namespace CSharpCode
             // bind : M a -> (a -> M b) -> M b
             // return : a -> M a
             //
-            // when M is Maybe, return sames to Some function.
+            // when M is Maybe, return means Some function.
             var result = mRed.Bind(red => Option.Some(addBrane(red)));
             Console.WriteLine(result);
         }
@@ -88,6 +88,20 @@ namespace CSharpCode
             Console.WriteLine(result.ToStr());
         }
 
+        public static void PlaySeqBindAndReturn()
+        {
+            var mColors = new []{"red" , "green", "blue"}.ToSeq();
+
+            Func<string, string> addBrane = c => "[" + c + "]";
+
+            // bind : M a -> (a -> M b) -> M b
+            // return : a -> M a
+            //
+            // when M is Seq, return means Singleton function.
+            var result = mColors.Bind(red => Seq.Singleton((addBrane(red))));
+            Console.WriteLine(result);
+        }
+
         public static void PlaySeqMonad()
         {
             // init the seq. 1..5
@@ -114,6 +128,7 @@ namespace CSharpCode
             PlayMaybeBindAndReturn();
             PlayMaybeMonad();
             PlaySeq();
+            PlaySeqBindAndReturn();
             PlaySeqMonad();
         }
     }
