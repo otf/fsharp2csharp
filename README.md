@@ -4,7 +4,7 @@ This sample code explains the comparison between F#(with [Typeclasses](https://c
 
 * Play Function(id, curry, uncurry, flip)
 * Play Maybe Monad
-* Play Seq
+* Play Seq Functions
 * Play Seq Monad
 * Applicative Style (only F#)
 
