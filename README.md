@@ -2,10 +2,10 @@ fsharp2csharp
 =============
 Comparison between F#(with Typeclasses) and C#(with LangExt)
 
-* Play the Function
-* Play the Maybe Monad
-* Play the Seq
-* Play the Seq Monad
+* Play Function
+* Play Maybe Monad
+* Play Seq
+* Play Seq Monad
 
 ## FSharp
 See the [Program.fs](https://github.com/otf/fsharp2csharp/blob/master/fsharp2csharp/FSharpCode/Program.fs "Program.fs")
