@@ -28,9 +28,8 @@ namespace CSharpCode
 
             var failResult =
                 from red in mRed
-                from green in mGreen
-                from none in mNone
-                select plusColor(red, green);
+                from none in (Option<string>)mNone
+                select plusColor(red, none);
 
             Console.WriteLine(failResult);
         }
